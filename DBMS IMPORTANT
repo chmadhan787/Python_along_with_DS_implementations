@@ -1,0 +1,53 @@
+DBMS is used to manage and store the data in a tabular form . It provides a tool or an interface for
+performing various operations such as inserting, deleting, updating, etc. into a database. A DBMS system
+helps a user to overcome problems like data inconsistency, data redundancy, etc. in a database and makes
+it more convenient and organized to use it.
+
+It is widely asked in almost all technical interviews .
+
+The list of important topics when preparing for tech interview are : -
+
+Advanatges of DBMS over the file system
+Data Abstraction
+2 tier and 3 tier architecture
+DDL , DML and DCL commands(most important)
+ER Model ,study about entity, entity set , attributes(also types of attributes) and relationship
+Types of keys - super key,candidate key , primary key , alternate key and foreign key (most important)
+Relational algebra(various operators like select , project ,intersection , union , multiplication and division)
+Types of joins - inner join , left outer , right outer , full outer and natural join(most important)
+Normalization - till third normal form and BCNF would be sufficient(most important)
+ACID properties
+Difference between information and data, physical and logical data independence,instance and schema , delete
+and truncate , primary key and unique key , shared and exclusive lock (most important).
+I have given various interviews and I am quite confident that these topics would be enough to study while
+preparing for tech interviews . Also , you can refer to the documentations of tutorialspoint , javatpoint ,
+geeksforgeeks and interview bit for answers to these and also go through commonly asked interview questions
+where you will be getting more these types of interview questions to prepare well .In case , you have time
+to prepare and you want to study thoroughly :-
+
+You can watch some good youtube videos like GateSmashers , Jenny’s lectures and Knowledge gate.
+You can even learn by practice . You can practice questions for SQL on hackerrank and leetcode for getting
+fluency in writing SQL queries.
+You can go for a Interview preperation course from Coding Ninjas .I myself have gone through the course and
+found it very useful to prepare for tech interviews.
+In the course , all the topics were covered , without leaving anything - Data models, ER models, Relational
+Models, introduction to MySQL, SQL queries, normalizations, transactions, indexing, Classification of Databases
+, NoSQL Databases, and Database optimization.
+Teachers and mentors in the course are very supportive . They encourage discussion and learning by practice.
+All the topics taught by them were based on real-world experience and the knowledge of was delivered in such
+a way that it is easily understood by even a beginner .Also , every lecture was accompained by doubt sessions
+in which all my doubts were resolved within no time .
+The course has a hands-on approach with a live server environment where we can practice writing queries and
+solving MCQs
+In addition to this , the course provided Industry Relevant Problem Statement , where we practised exhuastive
+set of 150 + interview level questions .
+I would recommend you to at least take a try for this course , if you want to learn, as there is even an option
+ of free trial where the intro topics are covered . Also some of the most important topics in SQL like SQL
+ commands(DDL , DML and DCL) , managing database and Joining tables(inner join , left outer , right outer ,
+ full outer) with practice questions are also there . This will also unable you to experience the delivery
+ of content for free and then this would help you decide whether the purchasing course will be useful for
+ you or not .
+
+Hope you found the answer helpful . All your suggestions would be welcomed.
+
+Thankyou !!

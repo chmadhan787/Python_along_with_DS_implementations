@@ -1,0 +1,12 @@
+x=8
+print(bin(x))
+x=255
+print(hex(x))
+x=0b1001
+print(x)
+x=0xff
+print(x)
+x=25
+print(oct(x))
+x=0o31
+print(x)
