@@ -78,6 +78,36 @@ class Binary_Search_Tree_Node:
             elements += self.right.in_order_traversal()
         return elements
 
+    def pre_order_traversal(self):
+        elements = []
+
+        # first visit root node or base node
+        elements.append(self.data)
+
+        # visit left subtree next
+        if self.left:
+            elements += self.left.in_order_traversal()
+
+        # then visit right subtree
+        if self.right:
+            elements += self.right.in_order_traversal()
+        return elements
+
+    def post_order_traversal(self):
+        elements = []
+
+        # visit left subtree first
+        if self.left:
+            elements += self.left.in_order_traversal()
+
+        # then visit right subtree
+        if self.right:
+            elements += self.right.in_order_traversal()
+
+        # lastly visit root node or base node
+        elements.append(self.data)
+        return elements
+
     def find_max(self):
         if self.right is None:
             return self.data
@@ -123,3 +153,5 @@ print(numbers_tree.in_order_traversal())
 print(numbers_tree.search(20))
 numbers_tree.delete(23  )
 print(numbers_tree.in_order_traversal())
+print(numbers_tree.pre_order_traversal())
+print(numbers_tree.post_order_traversal())

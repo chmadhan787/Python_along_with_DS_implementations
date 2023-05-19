@@ -1,43 +1,32 @@
-
-class Binary_search_tree :
+class BST:
     def __init__(self,data):
         self.data = data
         self.left = None
         self.right = None
 
     def add_child(self,data):
-        if data == self.data:
+        if data == self.data :
             return
-
         if data < self.data:
             if self.left:
                 self.left.add_child(data)
             else:
-                self.left = Binary_search_tree(data)
-
+                self.left = BST(data)
         else:
             if self.right:
                 self.right.add_child(data)
             else:
-                self.right = Binary_search_tree(data)
+                self.right = BST(data)
 
-    def i_o_t(self):
+    def iot(self):
         elements = []
-        if self.left :
-            elements += self.left.i_o_t()
+
+        if self.left:
+            elements += self.left.iot()
 
         elements.append(self.data)
 
-        if self.right :
-            elements += self.right.i_o_t()
+        if self.right:
+            elements += self.right.iot()
+
         return elements
-
-def build_tree(elements = [17,4,1,20,9,23,18,34]):
-    root = Binary_search_tree(elements[0])
-    for i in range(1,len(elements)):
-        root.add_child(elements[i])
-
-    return root
-root = build_tree()
-
-print(root.i_o_t())
