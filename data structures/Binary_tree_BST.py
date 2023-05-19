@@ -1,7 +1,7 @@
 #what kind of problem does a binary tree solve?
 #Binary search tree is use to implement set
-# #in binary tree every node has atmost two child nodes
-# the values of nodes at left sub tree are less the value of root node
+# #in binary tree every node has at-most two child nodes
+# the values of nodes at left sub tree are less than the value of root node
 # and the values of nodes at right sub tree are greater than the value of root node
 # Binary tree doesnt allow duplicates
 # Search complexity is O(logn)
@@ -64,6 +64,25 @@ class Binary_Search_Tree_Node:
             else:
                 return False
 
+    def level_order_traversal(self): # considered as BFS
+        elements = [self]
+        next_elements = []
+        level_ele = []
+        result = []
+        while elements:
+            for root in elements:
+                level_ele.append(root.data)
+                if root.left:
+                    next_elements.append(root.left)
+                if root.right:
+                    next_elements.append(root.right)
+            result.append(level_ele)
+            level_ele = []
+            elements = next_elements
+            next_elements = []
+
+        return result
+
     def in_order_traversal(self):
         elements = []
         #visit left subtree first
@@ -78,7 +97,7 @@ class Binary_Search_Tree_Node:
             elements += self.right.in_order_traversal()
         return elements
 
-    def pre_order_traversal(self):
+    def pre_order_traversal(self): # considered as DFS
         elements = []
 
         # first visit root node or base node
@@ -155,3 +174,4 @@ numbers_tree.delete(23  )
 print(numbers_tree.in_order_traversal())
 print(numbers_tree.pre_order_traversal())
 print(numbers_tree.post_order_traversal())
+print(numbers_tree.level_order_traversal())
