@@ -86,4 +86,78 @@
 # -> check how memory space it is consuming.
 # -> if is web based then check the network speed , data rate
 # -> check hoe much power it is consuming.
-# -> check how mush cpu registers it requires..
+# -> check how mush cpu registers it requires.
+#
+#
+# Tricks to analyze the complexity of the algorithms with for loops
+#
+# 1. for(i = 0; i < n; i++) -> O(n)
+# 2. for(i = 0; i < n; i = i+2) -> O(n)
+# 3. for(i = n; i > 1; i--) -> O(n)
+# 4. for(i = 1; i < n; i = i*2) -> O(logn{base 2})
+# 5. for(i = 0; i < n; i = i*3) -> O(logn{base 3})
+# 6. for(i = 0; i < n; i = i/2) -> O(logn{base 2})
+#
+# Tricks to analyze the complexity of the algorithms with while and if
+#
+# i = 0
+# while i < n:      -> O(n)
+#       i++ same for i--
+#
+#
+# a = 1
+# while a<b:        -> O(logb{base 2}) or O(logn{base 2})
+#   a = a*2
+#
+#
+# a = 1
+# # while a<b:        -> O(logb{base 2}) or O(logn{base 2})
+# #   a = a/2
+#
+#
+# i = 1
+# k = 1
+# while k < n:         -> O(n^1/2)
+#   k = k + i
+#   i = i + 1
+#
+#   finding GCD of two numbers
+#  while m!=n:          -> O(n)
+#       if(m > n):
+#           m = m-n
+#       else:
+#           n = n-m
+#
+#
+# for the conditional statements like "if" the statements inside "if" will we executed only when the condition
+# becomes true i.e, only once so the complexity will be O(1)
+#
+#
+#
+# What is Divide and Conquer?
+#
+# it is related to strategy( is an approach or design for solving a problem ) for solving a problem
+# assume problem "P" is of size = n
+# we can break that problem into sub problems like P1, P2, P3 .... let say up to Pk.
+# now these sub problems can be solved to obtains solutions individually like S1, S2, S3 ..... let say up to Sk
+# we combine all the solutions to get the absolute solution for the main problem as "S".
+# we can apply divide and conquer for the sub problems also.
+# sub problem must be same as the main problem like if  the main problem is sort then the sub problems also must be
+# sort
+# we can apply devide and conquer to certain problem such that if we break the problem then the problem must
+# remain same ans also we should have a method for combining
+#
+# DAC(P):
+#   if small(P):
+#       S(P)
+#   else:
+#       divide P into P1, P2, P3, .... Pk
+#       Apply DAC(P1), DAC(P2), ....
+#       combine(DAC(P1), DAC(P2), ....)
+#
+# Example for DAC :
+# 1. Binary search
+# 2. Finding max and min
+# 3. Merge Sort
+# 4. Quick Sort
+# 5. Strassen's Matrix Multiplication.

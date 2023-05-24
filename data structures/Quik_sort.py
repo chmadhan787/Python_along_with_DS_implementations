@@ -30,6 +30,9 @@ def quick_sort(elements,start,end):
         quick_sort(elements,start,pi-1)#left partition
         quick_sort(elements,pi+1,end)#right partition
 
-elements = [11,9,29,7,2,15,28]
+# elements = [11,9,29,7,2,15,28]
+elements = [10,16,8,12,15,6,3,9,5]
 quick_sort(elements,0,len(elements)-1)
 print(elements)
+
+# to reduce the time complexity in this sorting technique we can always choose the middle element as pivot.
