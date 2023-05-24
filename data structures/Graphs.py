@@ -8,7 +8,7 @@ class Graph:
         self.edges = edges
         self.graph_dict = {}
         for start,end in self.edges:
-            if  start in self.graph_dict:
+            if start in self.graph_dict:
                 self.graph_dict[start].append(end)
             else:
                 self.graph_dict[start] = [end]
@@ -26,8 +26,8 @@ class Graph:
 
         for node in self.graph_dict[start]:
             if node not in path:
-                new_path = self.get_paths(node,end,path)
-                for p in new_path:
+                new_paths = self.get_paths(node,end,path)
+                for p in new_paths:
                     paths.append(p)
         return paths
 

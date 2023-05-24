@@ -53,3 +53,37 @@
 # in big o notation generally worst case is most important
 # worst case complexity of binary search is O(logn)
 # cpu uses ram to store presently executing code variables and data
+
+
+
+# Algorithms :
+#
+# Algorith means a step by step procedure for solving a computational problem
+# a program is also a step by step process for solving a problem
+# but the difference is that th algorithm is written before writing a program for a problem
+# that is the algorithm is like english statements use to understand the logic for solving a problem and to write a
+# code , An algorithm is written at the time of designing the code and the program is the thing develop by implemen
+# ting the previously written algorithm
+# Algorithms will be written by the people who have domain knowledge and the program will be written by the programmers
+# we can use any language to write an algo but we must use a programming language to write a program
+# both depends on the hardware and operating systems.
+# we analyze the algorithm and we test the programs.
+#
+#
+#
+# characteristics of algorithm :
+
+# 1. Algorithm can take 0 or more inputs
+# 2. Algo must generate atleast one output
+# 3. Definiteness - every statement should have only single meaning
+# 4. Finiteness - algo must have finite set of statements, every algo must have a termination point
+# 5. Effectiveness.
+#
+#
+#
+#How to analyze an algorithm ?
+# -> check how much time it is taking
+# -> check how memory space it is consuming.
+# -> if is web based then check the network speed , data rate
+# -> check hoe much power it is consuming.
+# -> check how mush cpu registers it requires..
