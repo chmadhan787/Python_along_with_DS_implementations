@@ -13,3 +13,12 @@ if a>b:
     print(a,' is greater')
 else:
     print(b,' is greater')
+
+
+def greatest(a,b): # this is using generator
+    if a>b:
+        yield a
+    else:
+        yield b
+v = greatest(a,b)
+print(next(v))

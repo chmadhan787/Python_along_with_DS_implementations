@@ -18,9 +18,26 @@ else:
 
 def p_or_n(a):
     if a>0:
-        print('positive')
+        return 'positive'
     elif a==0:
-        print('zero')
+        return 'zero'
     else:
-        print('negative')
+        return 'negative'
 p_or_n(n)
+
+
+def pon(n):
+        if n > 0:
+            yield True
+        elif n == 0:
+            yield '0'
+        else:
+            yield False
+
+v = pon(n)
+try:
+    print(next(v))
+    print(next(v))
+    print(next(v))
+except:
+    print("elements exceeded")

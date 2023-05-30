@@ -142,4 +142,4 @@ wh.write(lap)
 # members are private here.
 # it is used to restrict access to internal methods and variables of a class,so that nobody can modify the
 # functionality of code or code is not disturbed by an accident.
-# data abstraction and encapsulation are often used as synonyms.
+# data, abstraction and encapsulation are often used as synonyms.

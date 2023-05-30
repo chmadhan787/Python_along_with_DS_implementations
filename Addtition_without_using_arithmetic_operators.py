@@ -1,9 +1,9 @@
-# the main theme us to use bitwise operators
+# the main theme is to use bitwise operators
 
 def add(x,y):
     #lets relate this to full adder in transistor gates concept
     #there we will have sum and carry output for bitwise sum of two binary numbers
-    # so from that concept to get carry we do and of binary values of given inputs
+    # so from that concept to get carry we do "and operation" of binary values of given inputs
     while y!=0:
         # Iterate till there is no carry
         # carry now contains common

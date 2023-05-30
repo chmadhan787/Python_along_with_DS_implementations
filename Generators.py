@@ -14,7 +14,7 @@ values = topten1()
 print(values)#prints generator object
 #in order to fetch values from iterator we need to use next function
 print()
-print(values.__next__())
+print(values.__next__()) # also we can use next func as print(next(values)).
 print(values.__next__())
 #yield is same as return but return will terminate the function but yield wont
 for i in values:
