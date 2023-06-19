@@ -29,7 +29,7 @@ f1()
 print(sum1) # since the local sum1 variable bot visible to global space the value 20
 # will be printed in the output
 
-# using the global varaible as i is even we change the value of that in local space
+# using the global variable it will be as it is, even we change the value of that in local space
 sum2 = 30
 def f2():
     global sum2
